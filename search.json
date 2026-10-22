@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "From the Villablanca lab:\n\nYuhao Chi: postdoctoral fellow\nAlejandra Ulloa: PhD student\nMartín Suárez: PhD student\n\nFrom the Giacomello lab:\n\nMario Liva: postdoctoral fellow\nSofia Rouot: PhD student"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Problem formulation and data description",
+    "section": "",
+    "text": "Definition of niche: co-occurrence of host and microbial features in a region of space. Ideally, this would have functional implications, but we cannot test it with our data.\nThis can be thought as a process of embedding spots in a space that is based on host (gene expression) and bacterial (bacterial abundance) features."
+  },
+  {
+    "objectID": "index.html#related-papers",
+    "href": "index.html#related-papers",
+    "title": "Problem formulation and data description",
+    "section": "Related papers",
+    "text": "Related papers\nOther papers in niche definition using only host features.\n\nNicheformer: a foundation model for single-cell and spatial omics\nNovae: a graph-based foundation model for spatial transcriptomics data\nQuantitative characterization of cell niches in spatially resolved omics data\nCellNiche represents cellular microenvironments in atlas-scale spatial omics data with contrastive learning"
+  }
+]
