@@ -80,7 +80,47 @@ As of the current date, SmT data is still under processing. Due to heavy computa
 # Open questions
 
 * What state of analysis is needed to start the AI part?
-* Should we use gene expression as it is, or derive features from it? E.g. pathway activity, cell type proportions. 
+* Should we use gene expression as it is, or derive features from it? E.g. pathway activity, cell type proportions.
+
+
+# Sample overview
+
+| Dataset | Mice / patients | Tissue | Condition / diet | Timepoint |
+|---|---|---|---|---|
+| Mouse colitis | 1 | 5 tissue sections (distal-proximal colon) | Steady state | – |
+| Mouse colitis | 1 | 2 tissue sections (distal-proximal colon) | Germ free | – |
+| Mouse colitis | 1 | 4 tissue sections (distal-proximal colon) | Hamburg microbiota | – |
+| Mouse colitis | 1 | 4 tissue sections (distal-proximal colon) | Yale microbiota | – |
+| Mouse colitis | 1 | 4 tissue sections (distal-proximal colon) | Germ free | – |
+| KTH FOOD – CRC | 1 | 3x colon segments | GW diet | Naive |
+| KTH FOOD – CRC | 2 | 3x colon segments | GW diet (6w after diet) | D0 |
+| KTH FOOD – CRC | 2 | 3x colon segments | STD diet (6w after diet) | D0 |
+| KTH FOOD – CRC | 1 | 3x colon segments | Fibre diet (6w after diet) | D0 |
+| KTH FOOD – CRC | 1 | 3x colon segments | Seaweed diet (6w after diet) | D0 |
+| KTH FOOD – CRC | 3 | 3x colon segments | STD diet | D43 |
+| KTH FOOD – CRC | 3 | 3x colon segments | GW diet | D43 |
+| KTH FOOD – CRC | 3 | Colon swiss roll | STD diet | D43 |
+| KTH FOOD – CRC | 3 | Colon swiss roll | GW diet | D43 |
+| KTH FOOD – CRC | 3 | Colon swiss roll | Fibre diet | D43 |
+| KTH FOOD – CRC | 3 | Colon swiss roll | Seaweed diet | D43 |
+| KTH FOOD – DSS | 1 | Colon swiss roll | GW diet | Naive |
+| KTH FOOD – DSS | 1 | Colon swiss roll | Fibre diet | Naive |
+| KTH FOOD – DSS | 3 | Colon swiss roll | STD diet | D0 |
+| KTH FOOD – DSS | 3 | Colon swiss roll | GW diet | D0 |
+| KTH FOOD – DSS | 3 | Colon swiss roll | Fibre diet | D0 |
+| KTH FOOD – DSS | 3 | Colon swiss roll | Seaweed diet | D0 |
+| KTH FOOD – DSS | 3 | Colon swiss roll | STD diet | D7 |
+| KTH FOOD – DSS | 3 | Colon swiss roll | GW diet | D7 |
+| KTH FOOD – DSS | 3 | Colon swiss roll | Fibre diet | D7 |
+| KTH FOOD – DSS | 3 | Colon swiss roll | Seaweed diet | D7 |
+| KTH FOOD – DSS | 3 | Colon swiss roll | STD diet | D14 |
+| KTH FOOD – DSS | 4 | Colon swiss roll | GW diet | D14 |
+| KTH FOOD – DSS | 2 | Colon swiss roll | Fibre diet | D14 |
+| KTH FOOD – DSS | 5 | Colon swiss roll | Seaweed diet | D14 |
+| Neonatal atrasia cohort | 6 patients | Colon / SI biopsies |
+| UC patients | - | Colon | Ulcerative colitis | - |
+
+: Overview of the available samples per dataset. {#tbl-samples}
 
 
 # Related papers
