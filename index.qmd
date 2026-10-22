@@ -1,0 +1,55 @@
+---
+title: "Problem formulation and data description"
+---
+
+# Definitions 
+
+* Definition of niche: co-occurrence of host and microbial features in a region of space. Ideally, this would have functional implications, but we cannot test it with our data. 
+* This can be thought as a process of embedding spots in a space that is based on host (gene expression) and bacterial (bacterial abundance) features. 
+
+# Problem formulation
+
+* Unsupervised classification of spots: categorizing spots in discrete categories based on the gene expression and the bacterial abundance. 
+* Modalities: gene expression, bacterial abundance, hematoxylin & eosin staining with spatial coordinates (grid of points). 
+
+# Description of the data
+
+**Dimensions**: 
+    
+- Host: 20,000 features (genes) → 10,000 - 15,000 after filtering. 
+- Microbiome: 2000 features (bacterial genus) → around 100 after filtering
+
+**Published data**: other technologies have been created to profile bacterial abundance and host transcriptome in space. In the context of the murine gut, we can highlight:
+
+- SHM-seq: 100 µm diameter barcoded spots separated by 200 µm, capture of bacterial RNA using probes against 16s rRNA.
+- In situ polyadenylation: poly adenylation of total RNA to capture in poly-T platforms (Visium, Stereo-seq).
+- Stereoseq v2.
+
+**Labels**: no ground truth, definition of clusters that are stable across samples (stable co-occurrence of host and microbial features). 
+
+Types of samples:
+
+- Transverse sections: the colon is sectioned perpendicular to the longitudinal axis. Both luminal content and host tissue are profiled at an specific point of the colon length. 
+- Rolls: the colon is open longitudinally and rolled. The whole tissue is profiled along the longitudinal axis, but luminal content is mostly absent. 
+
+**Current status**
+
+Raw (sequencing) data is currently being processed. The following data is available to prototype: COMPLETE THIS
+
+Open questions: 
+
+* What state of analysis is needed to start the AI part?
+* Should we use gene expression as it is, or derive features from it? E.g. pathway activity, cell type proportions. 
+
+
+## Related papers
+
+Other papers in niche definition using only host features. 
+
+- [Nicheformer: a foundation model for single-cell and spatial omics](https://www.nature.com/articles/s41592-025-02814-z)
+
+- [Novae: a graph-based foundation model for spatial transcriptomics data](https://www.nature.com/articles/s41592-025-02899-6)
+
+- [Quantitative characterization of cell niches in spatially resolved omics data](https://www.nature.com/articles/s41588-025-02120-6)
+
+- [CellNiche represents cellular microenvironments in atlas-scale spatial omics data with contrastive learning](https://www.nature.com/articles/s41467-026-71759-4)
