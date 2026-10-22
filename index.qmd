@@ -2,10 +2,14 @@
 title: "Problem formulation and data description"
 ---
 
-# Definitions 
+# Definitions and concepts
 
 * Definition of niche: co-occurrence of host and microbial features in a region of space. Ideally, this would have functional implications, but we cannot test it with our data. 
 * This can be thought as a process of embedding spots in a space that is based on host (gene expression) and bacterial (bacterial abundance) features. 
+* [Spatial metatranscriptomics](https://www.nature.com/articles/s41587-023-01979-2) (SmT):  a sequencing-based approach that leverages 16S/18S/ITS/poly-d(T) multimodal arrays for simultaneous host transcriptome- and microbiome-wide characterization of tissues at 55-µm resolution
+
+![Schematics of the SmT workflow. From [Saarenpää et al., 2023](https://www.nature.com/articles/s41587-023-01979-2)](asets/smt.png){#fig-smt}
+
 
 # Problem formulation
 
@@ -16,8 +20,14 @@ title: "Problem formulation and data description"
 
 **Dimensions**: 
     
-- Host: 20,000 features (genes) → 10,000 - 15,000 after filtering. 
-- Microbiome: 2000 features (bacterial genus) → around 100 after filtering
+* Host: 20,000 features (genes) → 10,000 - 15,000 after filtering. We can identify gene function for host part.
+* Microbiome: 2000 features (bacterial genus) → around 100 after filtering. Not possible to identify bacterial function.
+* The output of the SmT experiments correspond to:
+    - H&E image
+    - host genes count matrix (list of genes x spatial barcodes; the counts in the matrix correspond to number of unique transcripts of that gene)
+    - bacterial count matrices (matrices at different taxonomic level: specie, genus, phylum; list of bacteria x spatial barcodes; the counts correspond to number of unique reads attributed to a specific taxa)
+    - eukaryotic (fungal) count matrices (matrices at different taxonomic level: specie, genus, phylum; list of fungi x spatial barcodes; the counts correspond to number of unique reads attributed to a specific taxa)
+
 
 **Published data**: other technologies have been created to profile bacterial abundance and host transcriptome in space. In the context of the murine gut, we can highlight:
 
@@ -32,17 +42,48 @@ Types of samples:
 - Transverse sections: the colon is sectioned perpendicular to the longitudinal axis. Both luminal content and host tissue are profiled at an specific point of the colon length. 
 - Rolls: the colon is open longitudinally and rolled. The whole tissue is profiled along the longitudinal axis, but luminal content is mostly absent. 
 
-**Current status**
+# Current status
 
-Raw (sequencing) data is currently being processed. The following data is available to prototype: COMPLETE THIS
+## Mouse colitis project
 
-Open questions: 
+Application of the Spatial 
+
+| Number of mice / sections |Condition|
+|---|---|
+|1 mice: 5 tissue sections (distal-proximal colon) | Steady state
+|1 mice: 2 tissue section (distal-proximal colon) | Germ free mice
+|1 mice: 4 tissue sections (distal-proximal colon) | Hamburg microbiota
+|1 mice: 4 tissue sections (distal-proximal colon) | Yale microbiota
+|1mice: 4 tissue sections (distal-proximal colon) | Germ free mice
+
+## KTH FOOD
+
+The KTH FOOD initiative investigates how different diets influence host-microbiome interactions in gut health and disease. 
+
+The study comprises two controlled mouse models: an inflamatory bowel disease (DSS-colitis) [60 mice; 61 tissue sections] and a colorectal cancer (CRC) [40 mice; 30 tissue sections] model, each including four dietary groups (standard control, fiber-enriched, seaweed-enriched, and a standard diet supplemented with the LXR agonist GW3965, which reduces inflammation and is therefore used as a positive control). 
+
+For the DSS-colitis model, colon tissues have been collected at defined pre-disease, disease, and recovery stages to distinguish baseline dietary effects from disease-associated changes. 
+
+![Experimental design for the DSS (colitis) model in KTH FOOD.](asets/dss.png){#fig-dss}
+
+For the CRC model, just the acute disease timepoint has been samples. 
+
+![Experimental design for the CRC model in KTH FOOD.](asets/crc.png){#fig-crc}
+
+The main technique used in this dataset is Spatial metaTranscriptomics, which simultaneously captures host mRNA, microbial 16S and fungal ITS profiles in tissue sections.
+
+As of the current date, SmT data is still under processing. Due to heavy computational resources requirements, just 15 samples have been processed (most of them belonging to the CRC group).
+
+
+
+
+# Open questions
 
 * What state of analysis is needed to start the AI part?
 * Should we use gene expression as it is, or derive features from it? E.g. pathway activity, cell type proportions. 
 
 
-## Related papers
+# Related papers
 
 Other papers in niche definition using only host features. 
 

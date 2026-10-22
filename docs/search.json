@@ -11,13 +11,20 @@
     "href": "index.html",
     "title": "Problem formulation and data description",
     "section": "",
-    "text": "Definition of niche: co-occurrence of host and microbial features in a region of space. Ideally, this would have functional implications, but we cannot test it with our data.\nThis can be thought as a process of embedding spots in a space that is based on host (gene expression) and bacterial (bacterial abundance) features."
+    "text": "Definition of niche: co-occurrence of host and microbial features in a region of space. Ideally, this would have functional implications, but we cannot test it with our data.\nThis can be thought as a process of embedding spots in a space that is based on host (gene expression) and bacterial (bacterial abundance) features.\nSpatial metatranscriptomics (SmT): a sequencing-based approach that leverages 16S/18S/ITS/poly-d(T) multimodal arrays for simultaneous host transcriptome- and microbiome-wide characterization of tissues at 55-µm resolution\n\n\n\n\n\n\n\nFigure 1: Schematics of the SmT workflow. From Saarenpää et al., 2023"
   },
   {
-    "objectID": "index.html#related-papers",
-    "href": "index.html#related-papers",
+    "objectID": "index.html#mouse-colitis-project",
+    "href": "index.html#mouse-colitis-project",
     "title": "Problem formulation and data description",
-    "section": "Related papers",
-    "text": "Related papers\nOther papers in niche definition using only host features.\n\nNicheformer: a foundation model for single-cell and spatial omics\nNovae: a graph-based foundation model for spatial transcriptomics data\nQuantitative characterization of cell niches in spatially resolved omics data\nCellNiche represents cellular microenvironments in atlas-scale spatial omics data with contrastive learning"
+    "section": "Mouse colitis project",
+    "text": "Mouse colitis project\nApplication of the Spatial\n\n\n\nNumber of mice / sections\nCondition\n\n\n\n\n1 mice: 5 tissue sections (distal-proximal colon)\nSteady state\n\n\n1 mice: 2 tissue section (distal-proximal colon)\nGerm free mice\n\n\n1 mice: 4 tissue sections (distal-proximal colon)\nHamburg microbiota\n\n\n1 mice: 4 tissue sections (distal-proximal colon)\nYale microbiota\n\n\n1mice: 4 tissue sections (distal-proximal colon)\nGerm free mice"
+  },
+  {
+    "objectID": "index.html#kth-food",
+    "href": "index.html#kth-food",
+    "title": "Problem formulation and data description",
+    "section": "KTH FOOD",
+    "text": "KTH FOOD\nThe KTH FOOD initiative investigates how different diets influence host-microbiome interactions in gut health and disease.\nThe study comprises two controlled mouse models: an inflamatory bowel disease (DSS-colitis) [60 mice; 61 tissue sections] and a colorectal cancer (CRC) [40 mice; 30 tissue sections] model, each including four dietary groups (standard control, fiber-enriched, seaweed-enriched, and a standard diet supplemented with the LXR agonist GW3965, which reduces inflammation and is therefore used as a positive control).\nFor the DSS-colitis model, colon tissues have been collected at defined pre-disease, disease, and recovery stages to distinguish baseline dietary effects from disease-associated changes.\n\n\n\n\n\n\nFigure 2: Experimental design for the DSS (colitis) model in KTH FOOD.\n\n\n\nFor the CRC model, just the acute disease timepoint has been samples.\n\n\n\n\n\n\nFigure 3: Experimental design for the CRC model in KTH FOOD.\n\n\n\nThe main technique used in this dataset is Spatial metaTranscriptomics, which simultaneously captures host mRNA, microbial 16S and fungal ITS profiles in tissue sections.\nAs of the current date, SmT data is still under processing. Due to heavy computational resources requirements, just 15 samples have been processed (most of them belonging to the CRC group)."
   }
 ]
